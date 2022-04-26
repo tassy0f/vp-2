@@ -14,13 +14,16 @@ export class ProductItemComponent implements OnInit {
 
   @Input()
   productItem!: Product 
+  
 
   constructor(public readonly modalService: ModalDialogService, private msg:MessageServiceService) {
   }
   
   modalCall() {
     this.modalService.isShowDialog = true
-    this.msg.sendMessage(this.productItem)     
+    this.msg.sendMessage(this.productItem) 
+    console.log(this.productItem);
+        
   }
 
   ngOnInit() {
