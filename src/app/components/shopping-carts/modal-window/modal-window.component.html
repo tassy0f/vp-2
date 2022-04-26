@@ -1,0 +1,23 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="img-car">
+            <img src="{{carInfo.imgCar}}" alt="Auto photo">
+        </div>
+        <div class="container">
+            <div class="row description">
+                <p>Description:</p>
+                <p>{{carInfo.description}}</p>
+            </div>
+            <div class="name-model">
+                <p>Mark: {{carInfo.name}}</p>
+                <p>Model: {{carInfo.model}}</p>
+                <p>Price: {{carInfo.price | currency:'USD'}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="Y-map">You may look your car on Yandex.Map here!</p>
+        <div class="Yandex-map"></div>
+    </div>
+</div>

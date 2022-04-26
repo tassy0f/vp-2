@@ -7,6 +7,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { NavComponent } from './components/shared/nav/nav.component';
 import { ShoppingCartsComponent } from './components/shopping-carts/shopping-carts.component';
 import { ProductItemComponent } from './components/shopping-carts/product-item/product-item.component';
+import { ModalWindowComponent } from './components/shopping-carts/modal-window/modal-window.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ProductItemComponent } from './components/shopping-carts/product-item/p
     FooterComponent,
     NavComponent,
     ShoppingCartsComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    ModalWindowComponent
   ],
   imports: [
     BrowserModule

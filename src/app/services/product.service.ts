@@ -28,31 +28,31 @@ export class ProductService {
       'Toyota', 
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum blanditiis iste sed, itaque officiis accusamus facere quisquam adipisci assumenda pariatur labore magnam, doloribus maxime laudantium ipsam modi fugit id recusandae.',
       85000,
-      'LandCruiser 200',
+      'LandCruiser 300',
       'assets/LandCruiser.jpg'
     ),
     new Product(
       4, 
-      'None', 
+      'WOW!', 
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum blanditiis iste sed, itaque officiis accusamus facere quisquam adipisci assumenda pariatur labore magnam, doloribus maxime laudantium ipsam modi fugit id recusandae.',
       600000,
-      ' ',
+      'Insane',
       'assets/404.jpg'
     ),
     new Product(
       5, 
-      'None', 
+      'WOW!', 
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum blanditiis iste sed, itaque officiis accusamus facere quisquam adipisci assumenda pariatur labore magnam, doloribus maxime laudantium ipsam modi fugit id recusandae.',
       600000,
-      ' ',
+      'Insane',
       'assets/404.jpg'
     ),
     new Product(
       6, 
-      'None', 
+      'WOW!', 
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum blanditiis iste sed, itaque officiis accusamus facere quisquam adipisci assumenda pariatur labore magnam, doloribus maxime laudantium ipsam modi fugit id recusandae.',
       600000,
-      ' ',
+      'Insane',
       'assets/404.jpg'
     ),
   ]

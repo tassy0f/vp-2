@@ -15,7 +15,6 @@ export class ShoppingCartsComponent implements OnInit {
 
   ngOnInit(): void {
     this.productList = this.prodService.getProducts();
-    
   }
 
 }

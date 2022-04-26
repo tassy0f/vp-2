@@ -1,0 +1,35 @@
+:host {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 2000;
+  overflow-y: auto;
+  padding: 1rem 1rem 142px;
+}
+
+p {
+  color: black;
+  text-align: left;
+}
+
+.img-car img {
+  width: 400px;
+  height: 400px;
+}
+
+.description {
+  margin-top: -70px;
+  font-size: 20px;
+}
+
+.name-model {
+  font-size: 24px;
+}
+
+.Y-map {
+  font-size: 18px;
+}
