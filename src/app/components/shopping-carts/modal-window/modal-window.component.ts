@@ -16,7 +16,7 @@ export class ModalWindowComponent implements OnInit {
   yaLatitude:number = this.randomLatLng(55.905,55.58);
   yaLongitude:number = this.randomLatLng(37.76,37.44)
 
-  constructor(private messageServ:MessageServiceService,private dialogS:ModalDialogService) { } // modalService toze wremenno
+  constructor(private messageServ:MessageServiceService,public readonly dialogS:ModalDialogService) { } 
   
   ngOnInit() {
     this.messageServ.getMessage().subscribe((product: Product) => {
@@ -28,8 +28,11 @@ export class ModalWindowComponent implements OnInit {
     return Math.random() * (to - from) + from;
   }
 
-
   public closeModal() {
-    this.dialogS.isShowDialog = false //  Wremenno tut
+    this.dialogS.isShowDialog = false 
+  }
+
+  public openModalForm() {
+    this.dialogS.isShowModalForm = true
   }
 }

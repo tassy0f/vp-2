@@ -9,6 +9,7 @@ import { ShoppingCartsComponent } from './components/shopping-carts/shopping-car
 import { ProductItemComponent } from './components/shopping-carts/product-item/product-item.component';
 import { ModalWindowComponent } from './components/shopping-carts/modal-window/modal-window.component'
 import { AngularYandexMapsModule } from 'angular8-yandex-maps';
+import { ModalFormComponent } from './components/shopping-carts/modal-window/modal-form/modal-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AngularYandexMapsModule } from 'angular8-yandex-maps';
     NavComponent,
     ShoppingCartsComponent,
     ProductItemComponent,
-    ModalWindowComponent
+    ModalWindowComponent,
+    ModalFormComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,8 @@ export class ModalDialogService {
 
   public isShowDialog: boolean = false
 
+  public isShowModalForm: boolean = false
+
   constructor() { }
   
 }

@@ -1,0 +1,43 @@
+<div class="modal modal-signin d-block py-5" tabindex="-1" role="dialog" id="modalSignin">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content rounded-5 shadow">
+
+        <div class="modal-header p-5 pb-4 border-bottom-0">
+          <h2 class="fw-bold mb-0">Your contact details</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeModalForm()"></button>
+        </div>
+  
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                    <input type="email" class="form-control rounded-4" id="SecondName" placeholder="Фамилия">
+                    <label for="SecondName">Фамилия</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-4" id="Name" placeholder="Имя">
+                        <label for="Name">Имя</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-4" id="ThirdName" placeholder="Отчество">
+                        <label for="ThirdName">Отчество</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-4" id="Email" placeholder="name@example.com">
+                        <label for="Email">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-4" id="Phone_number" placeholder="Номер телефона">
+                        <label for="Phone_number">Номер телефона</label>
+                    </div>
+                </div>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

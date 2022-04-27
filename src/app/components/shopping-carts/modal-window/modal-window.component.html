@@ -1,3 +1,4 @@
+<app-modal-form *ngIf="dialogS.isShowModalForm"></app-modal-form>
 <app-nav></app-nav>
 <div class="container border shadow-sm h-md-250 rounded">
     <div class="row">
@@ -20,7 +21,7 @@
         <h3 class="box-title mt-3">You may look your car on Yandex.Map here!</h3>
         <div class="Yandex-map border shadow-sm h-md-250 rounded mt-3">
             <ya-map [center]="[55.751952, 37.600739]" [zoom]="9">
-                <ya-placemark [geometry]="[yaLatitude, yaLongitude]" (yaclick)="closeModal()"></ya-placemark>
+                <ya-placemark [geometry]="[yaLatitude, yaLongitude]" (yaclick)="openModalForm()"></ya-placemark>
             </ya-map>
         </div>
     </div>
