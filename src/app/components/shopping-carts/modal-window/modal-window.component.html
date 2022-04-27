@@ -1,27 +1,29 @@
 <app-nav></app-nav>
-<div class="container">
-    <div class="d-flex justify-content-between align-items-center">
-        <div class="img-car">
-            <img src="{{carInfo.imgCar}}" alt="Auto photo">
+<div class="container border shadow-sm h-md-250 rounded">
+    <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-6">
+            <div class="white-box text-center">
+                <img src="{{carInfo.imgCar}}" alt="Auto photo" class="img-responsive border shadow-sm h-md-250 rounded mt-2" width="100%" height="400">
+            </div>
         </div>
-        <div class="container">
-            <div class="row description">
-                <p>Description:</p>
-                <p>{{carInfo.description}}</p>
-            </div>
-            <div class="name-model">
-                <p>Mark: {{carInfo.name}}</p>
-                <p>Model: {{carInfo.model}}</p>
-                <p>Price: {{carInfo.price | currency:'USD'}}</p>
-            </div>
+        <div class="col-lg-7 col-md-7 col-sm-6">
+            <h4 class="box-title mt-5">Product description</h4>
+            <p>{{carInfo.description}}</p>
+            <h2 class="mt-5">Price: {{carInfo.price | currency:'USD' | slice:0:8}}</h2>
+            <h3 class="mt-2 mb-0">Mark: {{carInfo.name}}</h3>
+            <h3 class="mt-2">Model: {{carInfo.model}}</h3>
+            <button class="btn btn-dark btn-rounded mr-1 mt-3" (click)="closeModal()">Back</button>
+            <button class="btn btn-primary btn-rounded mt-3 buy-button">Buy Now</button>
         </div>
     </div>
-    <div class="container">
-        <p class="Y-map">You may look your car on Yandex.Map here!</p>
-        <div class="Yandex-map">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="box-title mt-3">You may look your car on Yandex.Map here!</h3>
+        <div class="Yandex-map border shadow-sm h-md-250 rounded mt-3">
             <ya-map [center]="[55.751952, 37.600739]" [zoom]="9">
                 <ya-placemark [geometry]="[yaLatitude, yaLongitude]" (yaclick)="closeModal()"></ya-placemark>
             </ya-map>
         </div>
     </div>
+    <p class="mt-2"></p>        
 </div>
+<app-footer class="container mt-2"></app-footer>

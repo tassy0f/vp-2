@@ -21,7 +21,7 @@ export class ProductService {
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum blanditiis iste sed, itaque officiis accusamus facere quisquam adipisci assumenda pariatur labore magnam, doloribus maxime laudantium ipsam modi fugit id recusandae.',
       215000,
       'R8',
-      'assets/R8.jpg'
+      'assets/R8.png'
     ),
     new Product(
       3, 
@@ -33,11 +33,11 @@ export class ProductService {
     ),
     new Product(
       4, 
-      'WOW!', 
+      'Lamborghini', 
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum blanditiis iste sed, itaque officiis accusamus facere quisquam adipisci assumenda pariatur labore magnam, doloribus maxime laudantium ipsam modi fugit id recusandae.',
-      600000,
-      'Insane',
-      'assets/404.jpg'
+      155000,
+      'Huracan',
+      'assets/Huracan.jpg'
     ),
     new Product(
       5, 
@@ -45,7 +45,7 @@ export class ProductService {
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum blanditiis iste sed, itaque officiis accusamus facere quisquam adipisci assumenda pariatur labore magnam, doloribus maxime laudantium ipsam modi fugit id recusandae.',
       600000,
       'Insane',
-      'assets/404.jpg'
+      'assets/404.png'
     ),
     new Product(
       6, 
@@ -53,7 +53,7 @@ export class ProductService {
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum blanditiis iste sed, itaque officiis accusamus facere quisquam adipisci assumenda pariatur labore magnam, doloribus maxime laudantium ipsam modi fugit id recusandae.',
       600000,
       'Insane',
-      'assets/404.jpg'
+      'assets/404.png'
     ),
   ]
 
