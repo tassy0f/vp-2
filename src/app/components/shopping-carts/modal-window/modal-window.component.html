@@ -18,6 +18,10 @@
     </div>
     <div class="container">
         <p class="Y-map">You may look your car on Yandex.Map here!</p>
-        <div class="Yandex-map"></div>
+        <div class="Yandex-map">
+            <ya-map [center]="[55.751952, 37.600739]" [zoom]="9">
+                <ya-placemark [geometry]="[yaLatitude, yaLongitude]" (yaclick)="closeModal()"></ya-placemark>
+            </ya-map>
+        </div>
     </div>
 </div>

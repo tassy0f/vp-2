@@ -21,9 +21,7 @@ export class ProductItemComponent implements OnInit {
   
   modalCall() {
     this.modalService.isShowDialog = true
-    this.msg.sendMessage(this.productItem) 
-    console.log(this.productItem);
-        
+    this.msg.sendMessage(this.productItem)     
   }
 
   ngOnInit() {

@@ -1,6 +1,8 @@
 import { OnInit, Component, Input} from '@angular/core';
 import { MessageServiceService } from 'src/app/services/message-service.service';
 import { Product } from '../models/product';
+import { YaReadyEvent } from 'angular8-yandex-maps';
+import { ModalDialogService } from 'src/app/services/modal-dialog.service';
 @Component({
   selector: 'app-modal-window',
   templateUrl: './modal-window.component.html',
@@ -11,12 +13,23 @@ export class ModalWindowComponent implements OnInit {
   
   @Input() carInfo:any = [];
 
-  constructor(private messageServ:MessageServiceService) { }
+  yaLatitude:number = this.randomLatLng(55.905,55.58);
+  yaLongitude:number = this.randomLatLng(37.76,37.44)
+
+  constructor(private messageServ:MessageServiceService,private dialogS:ModalDialogService) { } // modalService toze wremenno
   
   ngOnInit() {
     this.messageServ.getMessage().subscribe((product: Product) => {
       this.carInfo = product
-      console.log(this.carInfo);
     })
+  }
+
+  public randomLatLng(from:number,to:number):number {
+    return Math.random() * (to - from) + from;
+  }
+
+
+  public closeModal() {
+    this.dialogS.isShowDialog = false //  Wremenno tut
   }
 }
