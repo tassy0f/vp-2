@@ -11,6 +11,7 @@ import { ModalWindowComponent } from './components/shopping-carts/modal-window/m
 import { AngularYandexMapsModule } from 'angular8-yandex-maps';
 import { ModalFormComponent } from './components/shopping-carts/modal-window/modal-form/modal-form.component';
 import { SharedModule } from './components/shared/shared.module';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SharedModule } from './components/shared/shared.module';
   imports: [
     BrowserModule,
     AngularYandexMapsModule,
-    SharedModule
+    SharedModule,
+    InfiniteScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

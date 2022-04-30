@@ -17,4 +17,9 @@ export class ShoppingCartsComponent implements OnInit {
     this.productList = this.prodService.getProducts();
   }
 
+  onScroll() {
+    // setTimeout({},1000)
+    console.log("scrolled!!");
+  }
+
 }

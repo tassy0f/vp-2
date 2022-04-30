@@ -19,5 +19,3 @@ export class MessageServiceService {
     return this.subject.asObservable()
   }
 }
-// dont know whats going on here)))
-// Smthg from RXjs
