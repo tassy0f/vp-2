@@ -10,13 +10,11 @@ import { ProductItemComponent } from './components/shopping-carts/product-item/p
 import { ModalWindowComponent } from './components/shopping-carts/modal-window/modal-window.component'
 import { AngularYandexMapsModule } from 'angular8-yandex-maps';
 import { ModalFormComponent } from './components/shopping-carts/modal-window/modal-form/modal-form.component';
+import { SharedModule } from './components/shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    NavComponent,
     ShoppingCartsComponent,
     ProductItemComponent,
     ModalWindowComponent,
@@ -24,7 +22,8 @@ import { ModalFormComponent } from './components/shopping-carts/modal-window/mod
   ],
   imports: [
     BrowserModule,
-    AngularYandexMapsModule
+    AngularYandexMapsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
