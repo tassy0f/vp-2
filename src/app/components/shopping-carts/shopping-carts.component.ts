@@ -18,11 +18,11 @@ export class ShoppingCartsComponent implements OnInit {
   }
 
   onScroll() {
-    setTimeout(() => {let i = 6;
-       this.productList.push(
+    setTimeout(() => {let i = 7;
+      this.productList.push(
         new Product(i++,'WOW!','Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum blanditiis iste sed, itaque officiis accusamus facere quisquam adipisci assumenda pariatur labore magnam, doloribus maxime laudantium ipsam modi fugit id recusandae.',600000,'Insane','assets/404.png')
       );
-    }, 1000);  
+    }, 3000);  
   }
 
 }
