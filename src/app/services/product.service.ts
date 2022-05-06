@@ -27,7 +27,7 @@ export class ProductService {
       3, 
       'Toyota', 
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum blanditiis iste sed, itaque officiis accusamus facere quisquam adipisci assumenda pariatur labore magnam, doloribus maxime laudantium ipsam modi fugit id recusandae.',
-      85000,
+      100000,
       'LandCruiser 300',
       'assets/LandCruiser.jpg'
     ),
