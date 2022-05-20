@@ -8,34 +8,34 @@
         </div>
   
         <div class="modal-body p-5 pt-0">
-          <form class="">
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <div class="row mb-2">
                 <div class="col-md-6">
                     <div class="form-floating mb-3">
-                    <input type="text" class="form-control rounded-4" id="SecondName" placeholder="Фамилия" required>
+                    <input type="text" class="form-control rounded-4" id="SecondName" placeholder="Фамилия" formControlName="SecondName">
                     <label for="SecondName">Фамилия</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control rounded-4" id="Name" placeholder="Имя" required>
+                        <input type="text" class="form-control rounded-4" id="Name" placeholder="Имя" formControlName="Name">
                         <label for="Name">Имя</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control rounded-4" id="ThirdName" placeholder="Отчество">
+                        <input type="text" class="form-control rounded-4" id="ThirdName" placeholder="Отчество" formControlName="ThirdName">
                         <label for="ThirdName">Отчество</label>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control rounded-4" id="Email" placeholder="name@example.com" required>
+                    <div class="form-floating mb-3" >
+                        <input type="email" class="form-control rounded-4" id="Email" placeholder="name@example.com" formControlName="Email">
                         <label for="Email">Email address</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control rounded-4" id="Phone_number" placeholder="Номер телефона" required>
+                        <input type="number" class="form-control rounded-4" id="Phone_number" placeholder="Номер телефона" formControlName="Phone_number">
                         <label for="Phone_number">Номер телефона</label>
                     </div>
                 </div>
             </div>
-            <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Отправить</button>
+            <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit" [disabled]="form.invalid">Отправить</button>
           </form>
         </div>
       </div>
